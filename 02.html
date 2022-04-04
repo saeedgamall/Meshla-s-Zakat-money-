@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<!-- jQuery 1.8 or later, 33 KB -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<!-- Fotorama from CDNJS, 19 KB -->
+<link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;700&display=swap" rel="stylesheet">
+<!-- AOS ANIMATION -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<title>لجنة الزكاة بمشلة</title>
+</head>
+<style>
+    .x {
+        color: white;
+    }
+    .d-flex {
+        display: flex!important;
+    flex-direction: column;
+    justify-content: space-evenly!important;
+    align-items: flex-end;
+}
+body {
+    background-color: #74EBD5;
+background-image: -webkit-linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
+background-image: -moz-linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
+background-image: -o-linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
+background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
+
+    font-family: 'El Messiri', sans-serif;
+    
+}
+
+h2 {
+    text-align: center;
+}
+
+.z {
+    text-align:end;
+
+}
+.a {
+    text-align: center;
+    border: 4px solid gold;
+    border-radius: 18%;
+
+}
+@media screen and (min-width: 1024px) {
+    .a {
+        text-align: end;
+        border-radius: 5%;
+        border: 0px;
+    }
+   
+}
+
+
+
+.pay {
+    display: flex;
+    justify-content: center;
+}
+</style>
+
+<script>
+    function cal(zakat) {
+        var n1 = parseFloat(document.getElementById("n1").value);
+        document.getElementById("result").value = n1*2.5/100;
+        
+    }
+</script>
+<body>
+    <nav class="navbar bg-dark navbar-dark navbar-expand-sm">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand">
+                <img src="img/logo.jpg" width="70" alt="logo" class="rounded">
+            </a>
+<span class="portal-name x"> الخدمات الإلكترونية للجنة الزكاة</span>
+            <button type="button" data-bs-toggle="collapse" data-bs-target="#main_navbar" class="navbar-toggler">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="main_navbar" class="collapse navbar-collapse">
+                <ul class="w-100 navbar-nav d-flex">
+                    <li class="nav-item">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">الرئيسية</a>
+                            <li class="nav-item">
+                                <a href="02.html" class="nav-link">إحسب زكاتك</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="03.html" class="nav-link">أعمال اللجنة</a>
+                            </li>
+                            <li class="nav-item">
+                            </li>
+                            <a href="#topic1" class="nav-link">خدماتنا</a>
+                        </li>
+                                <a href="04.html" class="nav-link">مصارف الزكاة</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#topic4" class="nav-link">تواصل معنا</a>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+    </nav>
+<div class="container">
+    <div class="alert alert-warning my-2">
+        <h2>حاسبة زكاة المال الذكية</h2>
+    </div>
+    <ul class="list-group z">  <button type="button" class="btn btn-dark">
+        شروط الزكاة <span class="badge bg-danger">4</span>
+      </button>
+        <li class="list-group-item active">الأصول الثابتة حيث يجب على المسلم أن يقوم بإخراج الزكاة عن المال الذي بقي لديه لأكثر من عام كامل، وزاد عن النصب الشرعي وهو 595 جرام من الفضة أو 85 جرام من الذهب، بحيث يتوجب على المسلم إخراج ما يعادل 2,5% من قيمة هذا المال.</li>
+        <li class="list-group-item"> الذهب أو الفضة وغيرهما من المعادن الثمينة بحيث يجب على المسلم إخراج الزكاة فيهما سواء أراد المسلم أن يتاجر بهما أو يشتري بيت أو سيارة .</li>
+        <li class="list-group-item"> البهائم والأنعام فيجب على المسلم أن يخرج الزكاة عن هذه الأنعام، ومن الأمثلة على النصاب الشرعي للأنعام: أن نقوم بإخراج بقرة لا تقل عن سنتين من 30 بقرة، أو نخرج شاة واحدة عن الإبل التي تزيد على خمسة.</li>
+        <li class="list-group-item"> المزروعات التي نزرعها في الأرض من الأشجار والحبوب فيجب أن نخرج الزكاة عنها.</li>
+    </ul>
+    <div class="input-group mb-3 my-2" data-aos="flip-left">
+        <input type="number" id="n1" class="form-control" placeholder="اكتب هنا مقدار المال">
+        <button onclick="cal()" class="btn btn-success">إضغط هنا لحساب الزكاة</button>
+        <div class="input-group mb-3 my-2">
+            <input id="result" type="number" class="form-control" placeholder="مقدار الزكاة الواجب إخراجها">
+            <span class="input-group-text">مقدار زكاتك </span>
+          </div>
+    </div>
+ <ul class="list-group list-group-flush a">
+     <li class="list-group-item">
+         <h3>شرح فريضة الزكاة لفضيلة الشيخ الشعراوي</h3> 
+         <div class="fotorama" data-aos="fade-up">
+             <a href="https://www.youtube.com/watch?v=KwJdRBR4MZY"></a>
+             <a href="https://www.youtube.com/watch?v=jyIA965gO_o"></a>
+             <a href="https://www.youtube.com/watch?v=xNJwbc4UEDA"></a>
+         </div>
+     </li>
+     <li class="list-group-item">
+       <h3> شرح فريضة الزكاة لفضيلة الشيخ عمر عبد الكافي</h3>
+        <div class="fotorama" data-aos="fade-down">
+            <a href="https://www.youtube.com/watch?v=USFfS9Z-5Pw"></a>
+            <a href="https://www.youtube.com/watch?v=COHu3NSM51k"></a>
+            <a href="https://www.youtube.com/watch?v=avSgEIdRzjo"></a>
+        </div>
+     </li>
+     <li class="list-group-item">
+         <h3>شرح فريضة الزكاة لفضيلة الشيخ مصطفي العدوي</h3>
+         <div class="fotorama" data-aos="fade-right">
+             <a href="https://www.youtube.com/watch?v=jvAapNiOZ00"></a>
+             <a href="https://www.youtube.com/watch?v=E2vlmYNFpqA"></a>
+             <a href="https://www.youtube.com/watch?v=N1KmS3AW3GA"></a>
+             <a href="https://www.youtube.com/watch?v=R03NIW_UpQA"></a>
+         </div>
+     </li>
+ </ul>
+ <div class="container my-4 pay" data-aos="flip-up" data-aos="flip-up">
+    <a href="#" class="btn btn-primary btn-lg">تبرع الآن</a>
+</div>
+<div class="mt-5 p-4 bg-dark text-white text-center" data-aos="zoom-in-down">
+<p>جميع الحقوق محفوظة 2022
+     <br><a href="https://www.facebook.com/saeed.gamall/">المبرمج : سعيد جمال كريم </a>
+<br>+201112705903|+201551326987
+    </p>
+</div>
+   <!-- AOS ANIMATION -->
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <script>
+       AOS.init();
+     </script>
+</body>
+</html>
